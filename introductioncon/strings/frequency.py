@@ -1,0 +1,17 @@
+"""text="programming"
+frequency = {}
+for char in text:
+    if char in frequency:
+        frequency[char] += 1
+    else:
+        frequency[char] = 1
+print("Character Frequency:")
+for char, count in frequency.items():
+    print(f"{char}: {count}") """
+    
+    
+from collections import Counter
+
+text="programming"
+frequency = Counter(text)
+print(frequency)
